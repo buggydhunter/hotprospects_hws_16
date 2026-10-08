@@ -4,8 +4,9 @@
 //
 //  Created by Onur Ay on 07.10.26.
 //
-
+import SwiftData
 import SwiftUI
+
 
 @main
 struct hotprospects_hws_16App: App {
@@ -13,5 +14,6 @@ struct hotprospects_hws_16App: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Prospect.self)
     }
 }
